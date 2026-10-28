@@ -1,0 +1,57 @@
+.ms-desk-page {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+  width: 100%;
+}
+
+.ms-desk-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .ms-desk-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ms-desk-card {
+  background-color: var(--ms-bg-surface);
+  border: 2px solid var(--ms-border-light);
+  border-radius: var(--ms-radius-lg);
+  padding: 28px;
+  box-shadow: var(--ms-shadow-md);
+}
+
+.ms-desk-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--ms-border-light);
+}
+
+.ms-desk-header h1 {
+  font-size: 1.7rem;
+}
+
+.ms-desk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.ms-desk-table th, .ms-desk-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--ms-border-light);
+}
+
+.ms-desk-table th {
+  background-color: var(--ms-bg-muted);
+  color: var(--ms-navy-900);
+  font-weight: 700;
+}

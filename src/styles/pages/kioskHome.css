@@ -1,0 +1,183 @@
+.ms-kiosk-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+  width: 100%;
+}
+
+.ms-kiosk-hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.ms-kiosk-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.ms-kiosk-hero p {
+  font-size: 1.1rem;
+  color: var(--ms-text-muted);
+}
+
+/* Tabs */
+.ms-kiosk-tabs {
+  display: flex;
+  background-color: var(--ms-bg-surface);
+  border: 2px solid var(--ms-border-medium);
+  border-radius: var(--ms-radius-lg);
+  padding: 6px;
+  gap: 8px;
+  margin-bottom: 28px;
+  box-shadow: var(--ms-shadow-sm);
+}
+
+.ms-tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-radius: var(--ms-radius-md);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ms-text-secondary);
+  transition: all 0.2s;
+}
+
+.ms-tab-btn:hover {
+  background-color: var(--ms-bg-muted);
+}
+
+.ms-tab-btn.active {
+  background-color: var(--ms-navy-800);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(22, 57, 97, 0.2);
+}
+
+/* Card Container */
+.ms-kiosk-card {
+  background-color: var(--ms-bg-surface);
+  border: 2px solid var(--ms-border-light);
+  border-radius: var(--ms-radius-lg);
+  padding: 36px;
+  box-shadow: var(--ms-shadow-md);
+}
+
+/* Form Styles */
+.ms-form-group {
+  margin-bottom: 22px;
+}
+
+.ms-form-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ms-navy-900);
+  font-size: 1.05rem;
+}
+
+.ms-input {
+  width: 100%;
+  height: var(--touch-min-height);
+  padding: 12px 18px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: var(--ms-radius-md);
+  border: 2px solid var(--ms-border-medium);
+  background-color: var(--ms-bg-canvas);
+  color: var(--ms-text-primary);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ms-input:focus {
+  border-color: var(--ms-navy-800);
+  box-shadow: 0 0 0 3px rgba(22, 57, 97, 0.15);
+}
+
+.ms-input.error {
+  border-color: var(--ms-red-600);
+  background-color: var(--ms-red-100);
+}
+
+.ms-field-error {
+  margin-top: 6px;
+  color: var(--ms-red-600);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Gender Selector Radio Cards */
+.ms-gender-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.ms-gender-card {
+  height: var(--touch-min-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--ms-radius-md);
+  border: 2px solid var(--ms-border-medium);
+  background-color: var(--ms-bg-canvas);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ms-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ms-gender-card.active {
+  border-color: var(--ms-navy-800);
+  background-color: var(--ms-navy-100);
+  color: var(--ms-navy-900);
+  box-shadow: 0 0 0 2px var(--ms-navy-800);
+}
+
+/* Primary Button */
+.ms-btn-primary {
+  width: 100%;
+  height: calc(var(--touch-min-height) + 8px);
+  background-color: var(--ms-navy-800);
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: var(--ms-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(22, 57, 97, 0.25);
+  transition: all 0.2s;
+}
+
+.ms-btn-primary:hover:not(:disabled) {
+  background-color: var(--ms-navy-900);
+  transform: translateY(-1px);
+}
+
+.ms-btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ms-banner-error {
+  background-color: var(--ms-red-100);
+  border: 2px solid var(--ms-red-600);
+  color: var(--ms-red-600);
+  padding: 14px 20px;
+  border-radius: var(--ms-radius-md);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,54 @@
+.ms-token-badge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  background-color: var(--ms-bg-surface);
+  border-radius: var(--ms-radius-lg);
+  border: 2px solid var(--ms-navy-100);
+  box-shadow: var(--ms-shadow-md);
+  text-align: center;
+  margin: 16px 0;
+}
+
+.ms-token-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ms-text-muted);
+  margin-bottom: 8px;
+}
+
+.ms-token-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--ms-navy-900);
+  line-height: 1;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+.ms-token-type-pill {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: var(--ms-radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.ms-token-type-pill.temporary {
+  background-color: var(--ms-saffron-100);
+  color: var(--ms-saffron-700);
+  border: 1px solid var(--ms-saffron-500);
+}
+
+.ms-token-type-pill.permanent {
+  background-color: var(--ms-herbal-100);
+  color: var(--ms-herbal-700);
+  border: 1px solid var(--ms-herbal-500);
+}

@@ -1,0 +1,65 @@
+.ms-alert-banner {
+  border-radius: var(--ms-radius-md);
+  padding: 18px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+}
+
+/* Temporary Token Alert (Saffron / Amber) */
+.ms-alert-banner.temporary {
+  background-color: var(--ms-saffron-50);
+  border: 2px solid var(--ms-saffron-500);
+  color: var(--ms-saffron-700);
+}
+
+.ms-alert-banner.temporary .alert-icon {
+  color: var(--ms-saffron-600);
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+/* Permanent Token Alert (Ayurvedic Herbal Green) */
+.ms-alert-banner.permanent {
+  background-color: var(--ms-herbal-50);
+  border: 2px solid var(--ms-herbal-500);
+  color: var(--ms-herbal-700);
+}
+
+.ms-alert-banner.permanent .alert-icon {
+  color: var(--ms-herbal-600);
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.ms-alert-content h3 {
+  margin-bottom: 4px;
+  font-size: 1.15rem;
+  color: inherit;
+}
+
+.ms-alert-content p {
+  color: var(--ms-text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.ms-alert-tag {
+  display: inline-block;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.ms-alert-banner.temporary .ms-alert-tag {
+  background-color: var(--ms-saffron-600);
+  color: #ffffff;
+}
+
+.ms-alert-banner.permanent .ms-alert-tag {
+  background-color: var(--ms-herbal-600);
+  color: #ffffff;
+}
