@@ -1,0 +1,57 @@
+.ms-doctor-page {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+  width: 100%;
+}
+
+.ms-doctor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--ms-border-light);
+}
+
+.ms-doctor-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .ms-doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ms-doctor-card {
+  background-color: var(--ms-bg-surface);
+  border: 2px solid var(--ms-border-light);
+  border-radius: var(--ms-radius-lg);
+  padding: 24px;
+  box-shadow: var(--ms-shadow-md);
+}
+
+.ms-patient-queue-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: var(--ms-radius-md);
+  border: 1px solid var(--ms-border-light);
+  margin-bottom: 12px;
+  background-color: var(--ms-bg-canvas);
+  transition: all 0.2s;
+}
+
+.ms-patient-queue-row:hover {
+  border-color: var(--ms-navy-800);
+  background-color: var(--ms-navy-50);
+}
+
+.ms-patient-queue-row.active {
+  border-color: var(--ms-herbal-600);
+  background-color: var(--ms-herbal-50);
+}

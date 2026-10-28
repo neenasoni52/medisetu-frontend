@@ -1,0 +1,119 @@
+.ms-header {
+  background-color: var(--ms-bg-surface);
+  border-bottom: 2px solid var(--ms-border-light);
+  box-shadow: var(--ms-shadow-sm);
+  padding: 10px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ms-header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ms-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+  user-select: none;
+}
+
+.ms-brand-logo {
+  height: 74px;
+  width: auto;
+  max-width: 95px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(22, 57, 97, 0.16));
+}
+
+.ms-brand-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-brand-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--ms-navy-900);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.ms-brand-subtitle {
+  font-size: 0.8rem;
+  color: var(--ms-text-muted);
+  font-weight: 600;
+}
+
+/* Role Switcher Pills */
+.ms-role-nav {
+  display: flex;
+  background-color: var(--ms-bg-muted);
+  padding: 4px;
+  border-radius: var(--ms-radius-full);
+  gap: 4px;
+}
+
+.ms-role-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--ms-radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ms-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.ms-role-btn:hover {
+  background-color: rgba(22, 57, 97, 0.06);
+}
+
+.ms-role-btn.active {
+  background-color: var(--ms-navy-800);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(22, 57, 97, 0.25);
+}
+
+/* Accessibility Control Buttons */
+.ms-a11y-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ms-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--ms-radius-sm);
+  background-color: var(--ms-bg-muted);
+  color: var(--ms-navy-800);
+  border: 1px solid var(--ms-border-medium);
+  transition: all 0.2s;
+  font-weight: 700;
+}
+
+.ms-icon-btn:hover {
+  background-color: var(--ms-navy-100);
+  border-color: var(--ms-navy-700);
+}
+
+.ms-icon-btn.active {
+  background-color: var(--ms-saffron-600);
+  color: #ffffff;
+  border-color: var(--ms-saffron-700);
+}

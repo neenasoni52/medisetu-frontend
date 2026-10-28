@@ -1,0 +1,15 @@
+.ms-guard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.ms-guard-icon {
+  font-size: 56px;
+  color: var(--ms-saffron-600);
+  margin-bottom: 16px;
+}
